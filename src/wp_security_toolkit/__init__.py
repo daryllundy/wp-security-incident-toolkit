@@ -3,10 +3,12 @@
 from .scanner_engine import WordPressSecurityScanner
 from .detectors import BackdoorDetector, CryptoMinerDetector
 from .integrity import IntegrityChecker
+from .incident_response import IncidentResponder
 
 __all__ = [
     "WordPressSecurityScanner",
     "CryptoMinerDetector",
     "BackdoorDetector",
     "IntegrityChecker",
+    "IncidentResponder",
 ]
