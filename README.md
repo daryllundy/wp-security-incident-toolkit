@@ -103,7 +103,7 @@ python scanner.py backdoor-scan --path /var/www/html
 python scanner.py integrity-check --baseline /path/to/baseline.json
 
 # Generate security report
-python scanner.py report --format pdf --output security_report.pdf
+python scanner.py report --format pdf --type technical --output security_report.pdf
 ```
 
 ### Incident Response
@@ -119,6 +119,21 @@ python incident_response.py recovery-plan --incident-id 12345
 
 # Timeline analysis
 python incident_response.py timeline --start-date 2024-01-01 --end-date 2024-01-31
+```
+
+### Forensics & Monitoring
+```bash
+# Investigate a specific file
+python investigator.py analyze --file /path/to/suspicious/file.php
+
+# Generate an executive summary
+python reporter.py generate --format json --type executive --output security_report.json
+
+# Run a system audit
+python system_audit.py --path / --comprehensive
+
+# One-shot threat monitoring
+python threat_monitor.py --path /var/www/html
 ```
 
 ## 🔍 Detection Capabilities

@@ -14,6 +14,8 @@ htmlcov/
 .mypy_cache/
 .tox/
 docker-compose.override.yml
+.incidents/
+security_report*.json
 secrets/
 *.pem
 *.key
